@@ -1,0 +1,53 @@
+<div id="showpage">
+<p id="notice"><%= notice %></p>
+  <div class="container">
+    <div class="border">
+
+      <div class="img"></div>
+
+      <div class="content">
+        <h1><strong><%= @item.title.capitalize %></strong></h1>
+
+        <div class="properties">
+          <p>
+            <strong>Brand:</strong>
+              <%= @item.brand %>
+          </p>
+
+          <p>
+            <strong>Color:</strong>
+            <%= @item.color %>
+          </p>
+
+          <p><strong>Size:</strong>
+            <%= @item.size %>
+          </p>
+
+          <p><strong>Condition:</strong>
+            <%= @item.condition %>
+          </p>
+        </div>
+
+        <p class="price"><strong>Price:</strong>
+          <%= @item.price %>
+        </p>
+
+        <div class="description">
+          <p>
+            <strong>Description:</strong>
+            <%= @item.description %>
+          </p>
+          <p>
+            <strong>Url:</strong>
+            <%= @item.url %>
+          </p>
+        </div>
+    
+        <div class="div-btns">
+          <%= link_to 'Edit', edit_item_path(@item), class:"btn" %> 
+          <%= link_to 'Back', items_path, class:"btn" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
