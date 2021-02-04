@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 #items-index {
-    height: 100vh;
+    min-height: 100vh;
+    margin-bottom: 200px;
     background-color: #F7F7F7;
     #notice{
         display: none;
@@ -23,6 +24,9 @@
         color: #fff;
         text-shadow: 2px 2px black;
     }
+    .table-content{
+        width: 90%;
+    }
     table{
         margin-top: 70px;
         z-index: 1;
@@ -36,14 +40,14 @@
         color: #fff;
         padding-left: 10px;
         padding-right: 45px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     td{
         padding-left: 10px;
         padding-right: 45px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         
     }
     tr:nth-of-type(even){
@@ -58,6 +62,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 10px;
+       
     }
 }
 
@@ -125,7 +130,7 @@
     }
     .drop-downs{
         // border: solid 1px black;
-        width: 60%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
     }
@@ -181,7 +186,7 @@
     }
 }
 #new-item {
-    height: 100vh;
+    height: 105vh;
 }
 #new-item .back-btn{
     color: black;
@@ -190,6 +195,7 @@
     padding-top: 8px;
     padding-left: 30px;
     padding-right: 10px;
+    padding: 10px;
     width: 62px;
     height: 10px;
     margin-top: 5px;

@@ -4,19 +4,23 @@ class ItemsController < ApplicationController
   # GET /items or /items.json
   def index
     @items = Item.all
+    @header = "Show Cart"
   end
 
   # GET /items/1 or /items/1.json
   def show
+    @header = "Show Cart"
   end
 
   # GET /items/new
   def new
     @item = Item.new
+    @header = "Add Item"
   end
 
   # GET /items/1/edit
   def edit
+    @header = "Edit Item"
   end
 
   # POST /items or /items.json

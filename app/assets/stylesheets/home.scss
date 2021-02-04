@@ -142,26 +142,27 @@
 }
 /////////////////// Home-about styling ////////////////////
 #home-about{
-    height: 140vh;
+    height: 150vh;
+    
     .wrapper{
         padding-top: 40px;
-        width: 90%;
+        width: 96%;
         margin: auto;
         display: flex;
         justify-content: space-between;
     }
     .text{
-        flex: 1;
+        flex: 0.9;
         padding: 50px;
     }
     .right-img{
-        // flex: 0.4;
+        flex: 0.8;
         justify-self: flex-end ;
         padding: 50px;
     }
     img{
         width: 80%;
-        height: 600px;
+        height: 500px;
         border: 10px solid rgba(17, 17, 17, 0.4);
         border: 10px solid rgba(20, 20, 20, 0.7);
     }
@@ -173,6 +174,10 @@
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
+
+    h5{
+        padding-bottom: 5px;
+    }
     
     #main-footer{
         height: 20vh;
@@ -192,11 +197,11 @@
         justify-content: space-around;
         width: 60%;
         margin: auto;
-        padding-top: 30px;
+        padding-top: 20px;
     }
     #main-footer .footer-container .instagram, .linkedin, .codepen, .github {
         border: 1px solid #252934;
-        padding: 10px;
+        padding: 5px;
         background-color: #252934;
     }
     
